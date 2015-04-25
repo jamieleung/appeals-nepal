@@ -63,6 +63,10 @@ a {
       font-weight: 600;
       margin-bottom: 3rem;
       line-height: 1.4; }
+    #main .column h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 3rem; }
     #main .column ul {
       list-style: none;
       padding: 0;
