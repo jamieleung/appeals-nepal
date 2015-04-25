@@ -24,6 +24,7 @@ a {
 #header {
 
 	.logo {
+		box-sizing: border-box;
 		padding: 3rem;
 		background-color: #D32F2F;
 		color: white;
@@ -52,11 +53,15 @@ a {
 
 #main {
 	padding: 0;
+	box-sizing: border-box;
+
 
 	.column {
 		font-size: 1.5rem;
 		line-height: 1.8;
 		padding: 2rem 3rem 4rem 4rem;
+		box-sizing: border-box;
+
 
 		&:first-child {
 			background: lighten(#FFCDD2, 8% );
@@ -99,6 +104,8 @@ a {
 		ul {
 			list-style: none;
 			padding: 0;
+			box-sizing: border-box;
+
 
 			li {
 

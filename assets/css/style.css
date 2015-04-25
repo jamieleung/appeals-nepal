@@ -12,6 +12,7 @@ a {
   text-decoration: underline; }
 
 #header .logo {
+  box-sizing: border-box;
   padding: 3rem;
   background-color: #D32F2F;
   color: white;
@@ -28,11 +29,13 @@ a {
     padding: 1rem; }
 
 #main {
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
   #main .column {
     font-size: 1.5rem;
     line-height: 1.8;
-    padding: 2rem 3rem 4rem 4rem; }
+    padding: 2rem 3rem 4rem 4rem;
+    box-sizing: border-box; }
     #main .column:first-child {
       background: #fff6f7;
       border: 1px solid #ffd2d7;
@@ -62,7 +65,8 @@ a {
       line-height: 1.4; }
     #main .column ul {
       list-style: none;
-      padding: 0; }
+      padding: 0;
+      box-sizing: border-box; }
       #main .column ul li {
         border-bottom: 1px solid #ffd2d7;
         padding: 1rem 0 1rem 0; }
