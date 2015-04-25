@@ -1,0 +1,129 @@
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	color: #074272;
+	text-decoration: underline;
+}
+
+#header {
+
+	.logo {
+		padding: 3rem;
+		background-color: #D32F2F;
+		color: white;
+		font-size: 2rem;
+		font-weight: 600;
+		text-align: left;
+
+		.fa {
+			margin-right: 1rem;
+		}
+
+		.notification {
+
+			a {
+				font-size: 1.8rem;
+				color: white;
+				font-weight: 400;
+				border: 1px solid white;
+				padding: 1rem;
+			}
+		}
+		
+	}
+
+}
+
+#main {
+	padding: 0;
+
+	.column {
+		font-size: 1.5rem;
+		line-height: 1.8;
+		padding: 2rem 3rem 4rem 4rem;
+
+		&:first-child {
+			background: lighten(#FFCDD2, 8% );
+			border: 1px solid lighten(#FFCDD2, 1% );
+			padding: 2rem 4rem 4rem 4rem;
+
+			h1 {
+				font-size: 3rem;
+			}
+		}
+
+		.fa {
+			color: #D32F2F;
+		}
+
+		.info {
+			background: lighten(#BBDEFB, 8% );	
+			border: 1px solid #BBDEFB;	
+			padding: 1.5rem 1rem 1rem 2rem;
+			box-sizing: border-box;
+
+			a {
+				@include transition(all, 0.2s, ease-in-out);
+
+				&:hover {
+					opacity: 0.8;
+					margin-left: 0.4rem;
+				}
+			}
+
+		}
+
+		h1 {
+			font-size: 2.2rem;
+			font-weight: 600;
+			margin-bottom: 3rem;
+			line-height: 1.4
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+
+			li {
+
+				border-bottom: 1px solid lighten(#FFCDD2, 1% );
+				padding: 1rem 0 1rem 0;
+
+				a {	
+					@include transition(all, 0.2s, ease-in-out);
+					font-size: 1.8rem;
+					font-weight: 600;
+
+					&:hover {
+						opacity: 0.8;
+						margin-left: 0.4rem;
+					}
+				}
+
+				&:first-child {
+					padding: 0 0 1rem 0;
+				}
+			}
+		}
+	}
+}
+
+#footer {
+
+}
