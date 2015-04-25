@@ -21,6 +21,29 @@ a {
 	text-decoration: underline;
 }
 
+.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+a.skip:active, 
+a.skip:focus, 
+a.skip:hover {
+    left: 0; 
+    top: 0;
+    width: auto; 
+    height: auto; 
+    overflow: visible; 
+    background-color: #FAE4BA;
+  	outline: 3px solid #ffbf47;
+}
+
 #header {
 
 	.logo {
