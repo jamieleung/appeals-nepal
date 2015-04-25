@@ -17,7 +17,7 @@ body {
 }
 
 a {
-	color: #074272;
+	color: #003873;
 	text-decoration: underline;
 }
 
@@ -64,6 +64,7 @@ a {
 		&:first-child {
 			background: lighten(#FFCDD2, 8% );
 			border: 1px solid lighten(#FFCDD2, 1% );
+			border-left: 0;
 			padding: 2rem 3rem 4rem 3rem;
 
 			h1 {
@@ -77,10 +78,15 @@ a {
 		}
 
 		.info {
-			background: lighten(#BBDEFB, 8% );	
+			background: lighten(#BBDEFB, 8%);	
 			border: 1px solid #BBDEFB;	
 			padding: 1.5rem 1rem 1rem 2rem;
 			box-sizing: border-box;
+
+			.fa {
+				color: darken(#BBDEFB, 50%);
+				margin-right: 0.5rem;
+			}
 
 			a {
 				@include transition(all, 0.2s, ease-in-out);
@@ -125,6 +131,11 @@ a {
 					&:hover {
 						opacity: 0.8;
 						margin-left: 0.4rem;
+					}
+
+					&:focus, &:active {
+						background-color: #FAE4BA;
+  						outline: 3px solid #ffbf47;
 					}
 				}
 

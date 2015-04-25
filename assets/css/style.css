@@ -8,7 +8,7 @@ body {
   text-rendering: optimizeLegibility; }
 
 a {
-  color: #074272;
+  color: #003873;
   text-decoration: underline; }
 
 #header .logo {
@@ -39,6 +39,7 @@ a {
     #main .column:first-child {
       background: #fff6f7;
       border: 1px solid #ffd2d7;
+      border-left: 0;
       padding: 2rem 3rem 4rem 3rem; }
       #main .column:first-child h1 {
         font-size: 3rem; }
@@ -49,6 +50,9 @@ a {
       border: 1px solid #BBDEFB;
       padding: 1.5rem 1rem 1rem 2rem;
       box-sizing: border-box; }
+      #main .column .info .fa {
+        color: #0a63ad;
+        margin-right: 0.5rem; }
       #main .column .info a {
         -webkit-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
@@ -85,6 +89,9 @@ a {
           #main .column ul li a:hover {
             opacity: 0.8;
             margin-left: 0.4rem; }
+          #main .column ul li a:focus, #main .column ul li a:active {
+            background-color: #FAE4BA;
+            outline: 3px solid #ffbf47; }
         #main .column ul li:first-child {
           padding: 0 0 1rem 0; }
 
