@@ -62,6 +62,10 @@ a.skip:active, a.skip:focus, a.skip:hover {
       border-top: 0;
       padding: 2rem 3rem 4rem 3rem;
       overflow-y: auto; }
+      #main .column:first-child a {
+        color: #333333;
+        text-decoration: none;
+        outline: none; }
       #main .column:first-child h1 {
         font-size: 3rem; }
     #main .column .fa {
