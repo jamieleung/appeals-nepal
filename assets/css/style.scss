@@ -92,14 +92,14 @@ a.skip:hover {
 			padding: 2rem 3rem 4rem 3rem;
 			overflow-y:auto;
 
-			a {
-				color: #333333;
-				text-decoration: none;
-				outline: none;
-			}
-
 			h1 {
 				font-size: 3rem;
+
+				a {
+					color: #333333;
+					text-decoration: none;
+					outline: none;
+				}
 			}
 		}
 
