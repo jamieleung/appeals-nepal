@@ -59,6 +59,7 @@ a.skip:active, a.skip:focus, a.skip:hover {
       background: #fff6f7;
       border: 1px solid #ffd2d7;
       border-left: 0;
+      border-top: 0;
       padding: 2rem 3rem 4rem 3rem;
       overflow-y: auto; }
       #main .column:first-child h1 {
