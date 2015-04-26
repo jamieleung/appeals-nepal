@@ -59,7 +59,8 @@ a.skip:active, a.skip:focus, a.skip:hover {
       background: #fff6f7;
       border: 1px solid #ffd2d7;
       border-left: 0;
-      padding: 2rem 3rem 4rem 3rem; }
+      padding: 2rem 3rem 4rem 3rem;
+      overflow-y: auto; }
       #main .column:first-child h1 {
         font-size: 3rem; }
     #main .column .fa {
@@ -81,6 +82,9 @@ a.skip:active, a.skip:focus, a.skip:hover {
         #main .column .info a:hover {
           opacity: 0.8;
           margin-left: 0.4rem; }
+        #main .column .info a:focus, #main .column .info a:active {
+          background-color: #FAE4BA;
+          outline: 3px solid #ffbf47; }
     #main .column h1 {
       font-size: 2.2rem;
       font-weight: 600;

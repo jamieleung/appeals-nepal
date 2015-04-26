@@ -89,6 +89,7 @@ a.skip:hover {
 			border: 1px solid lighten(#FFCDD2, 1% );
 			border-left: 0;
 			padding: 2rem 3rem 4rem 3rem;
+			overflow-y:auto;
 
 			h1 {
 				font-size: 3rem;
@@ -117,6 +118,11 @@ a.skip:hover {
 				&:hover {
 					opacity: 0.8;
 					margin-left: 0.4rem;
+				}
+
+				&:focus, &:active {
+					background-color: #FAE4BA;
+					outline: 3px solid #ffbf47;
 				}
 			}
 
