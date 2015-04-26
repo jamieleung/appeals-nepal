@@ -47,9 +47,9 @@ a.skip:hover {
 #header {
 
 	.logo {
+		background-color: #D32F2F;
 		box-sizing: border-box;
 		padding: 3rem;
-		background-color: #D32F2F;
 		color: white;
 		font-size: 2rem;
 		font-weight: 600;
@@ -177,6 +177,45 @@ a.skip:hover {
 	}
 }
 
-#footer {
+a.backtotop,
+a.backtotop:link,
+a.backtotop:visited,
+a.backtotop:active,
+a.backtotop:hover {
+    display: none;
+	background-color: #D32F2F;
+	box-sizing: border-box;
+	padding: 3rem;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-align: center;
+    width: 100%;
+}
 
+@media screen and (max-width: 767px) {
+
+
+	#main {
+
+		.column {
+
+			&:first-child {
+				border-right: 0;
+			}
+
+		}
+
+	}
+
+
+    a.backtotop,
+    a.backtotop:link,
+    a.backtotop:visited,
+    a.backtotop:active {
+        display: inline-block;
+    }
+    a.backtotop:hover {
+    	background-color: darken(#D32F2F, 10%);
+    }
 }
