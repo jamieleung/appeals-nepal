@@ -8,7 +8,7 @@ body {
   text-rendering: optimizeLegibility; }
 
 a {
-  color: #003873;
+  color: #0A5084;
   text-decoration: underline; }
 
 .skip {
@@ -73,8 +73,10 @@ a.skip:active, a.skip:focus, a.skip:hover {
     #main .column .info {
       background: #e2f1fd;
       border: 1px solid #BBDEFB;
+      border-top: 6px solid #BBDEFB;
       padding: 1.5rem 1rem 1rem 2rem;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      margin-top: 2rem; }
       #main .column .info .fa {
         color: #0a63ad;
         margin-right: 0.5rem; }
@@ -104,8 +106,7 @@ a.skip:active, a.skip:focus, a.skip:hover {
       padding: 0;
       box-sizing: border-box; }
       #main .column ul li {
-        border-bottom: 1px solid #ffd2d7;
-        padding: 1rem 0 1rem 0; }
+        padding: 1rem 3rem 1rem 0; }
         #main .column ul li a {
           -webkit-transition: all 0.2s ease-in-out;
           -moz-transition: all 0.2s ease-in-out;
